@@ -12,7 +12,7 @@
     - source code is in C
 - `build`: where the web code is served from
 - `docker`: all things Docker for this project
-    - Dockerfile: used to create Docker image
+    - *Dockerfile*: used to create Docker image
         - uses Ubuntu
     - `image` directory
         - contains build scripts for Docker image
