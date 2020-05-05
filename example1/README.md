@@ -13,14 +13,17 @@
 - `build`: where the web code is served from
 - `docker`: all things Docker for this project
     - Dockerfile: used to create Docker image
-        - uses Ubuntu
+        - uses Ubuntu as Operating System
+        - runs scripts *build-base.sh* and *build-emsdk.sh*
     - `image` directory
         - contains build scripts for Docker image
+        - *build-base.sh* builds the base image needed
+        - *build-emsdk* builds [emsdk](https://github.com/emscripten-core/emsdk)
     - `container` directory
-        - contains scripts to run in container
-        - compiles source using [emsdk](https://github.com/emscripten-core/emsdk)
-        - puts compiled code into the `build` directory
-- `scripts`: used to run the program from the 'host' machine, aka your machine
+        - contains Docker container scripts which...
+            - compile code in `src` using [emsdk](https://github.com/emscripten-core/emsdk)
+            - ...and put that compiled pieces in the `build` directory
+- `scripts`: scripts to run in 'host' machine, aka your machine
 
 ### Tutorials
 - https://webassembly.org/getting-started/developers-guide/
