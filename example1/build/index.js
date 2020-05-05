@@ -1797,7 +1797,7 @@ function isFileURI(filename) {
 
 
 
-var wasmBinaryFile = 'hello.wasm';
+var wasmBinaryFile = 'index.wasm';
 if (!isDataURI(wasmBinaryFile)) {
   wasmBinaryFile = locateFile(wasmBinaryFile);
 }

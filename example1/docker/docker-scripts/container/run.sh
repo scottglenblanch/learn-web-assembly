@@ -6,5 +6,5 @@ cd /emsdk
 source ./emsdk_env.sh
 
 cd /app/src
-emcc hello.c -o hello.html
-emrun --no_browser --port 8080 .
+emcc /app/src/hello.c -o /app/build/index.html
+emrun --no_browser --port 8080 /app/build
