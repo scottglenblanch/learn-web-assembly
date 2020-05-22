@@ -4,10 +4,8 @@
 - [Docker](https://docs.docker.com/get-docker/)
 
 ### Run Code
-1. ```
-````cd <path to example1>
-    ./scripts/run.sh
-    ```
+1. ```cd path to example1
+    ./scripts/run.sh```
 2. In browser open [localhost:8080](http:localhost:8080)
 
 ### Code Explained
